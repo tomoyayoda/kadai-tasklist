@@ -9,11 +9,15 @@
         </div>
     <% end %>
     
-    <%= f.label :content, 'タスク' %>
-    <%= f.text_field :content %>
+    <div class="form-group col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
+        <%= f.label :content, 'タスク' %>
+        <%= f.text_field :content, class: 'form-control' %>
+    </div>
     
-    <%= f.label :status, 'ステータス' %>
-    <%= f.text_field :status %>
+    <div class="form-group col-xs12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
+        <%= f.label :status, 'ステータス' %>
+        <%= f.text_field :status, class: 'form-control' %>
+    </div>
     
-    <%= f.submit '投稿' %>
+    <%= f.submit '投稿', class: 'btn btn-primary' %>
 <% end %>
